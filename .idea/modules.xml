@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gumball-Machine-master/Gumball-Machine.iml" filepath="$PROJECT_DIR$/Gumball-Machine-master/Gumball-Machine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Gumball-Machine-master.iml" filepath="$PROJECT_DIR$/.idea/Gumball-Machine-master.iml" />
+    </modules>
+  </component>
+</project>
