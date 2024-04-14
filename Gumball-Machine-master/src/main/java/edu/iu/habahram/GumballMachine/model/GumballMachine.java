@@ -75,6 +75,7 @@ public class GumballMachine implements IGumballMachine {
             }
             else if (count > 0){
                 state = NO_QUARTER;
+                count = count - 1;
                 message = "Gumball dispensed.";
             }
             succeeded = true;

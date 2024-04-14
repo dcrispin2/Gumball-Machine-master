@@ -29,7 +29,7 @@ public final class GumballMachineRecord {
     }
 
     public String toLine(String machineId) {
-        String line = String.format("%1s,%2s,%3s",
+        String line = String.format("%1s,%2s,%s",
                 machineId,
                 getState(),
                 getCount());
