@@ -35,6 +35,6 @@ public class SoldOutState implements IState{
 
     @Override
     public String getTheName() {
-        return null;
+        return GumballMachineState.OUT_OF_GUMBALLS.name();
     }
 }

@@ -42,11 +42,11 @@ public class SoldState implements IState{
             message = "Machine sold out.";
         }
 
-        return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), count);
+        return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
     }
 
     @Override
     public String getTheName() {
-        return null;
+        return GumballMachineState.GUMBALL_SOLD.name();
     }
 }

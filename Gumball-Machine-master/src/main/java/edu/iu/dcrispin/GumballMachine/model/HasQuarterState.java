@@ -35,6 +35,6 @@ public class HasQuarterState implements IState{
     }
     @Override
     public String getTheName() {
-        return GumballMachineState.NO_QUARTER.name();
+        return GumballMachineState.HAS_QUARTER.name();
     }
 }
