@@ -1,7 +1,7 @@
-package edu.iu.habahram.GumballMachine.service;
+package edu.iu.dcrispin.GumballMachine.service;
 
-import edu.iu.habahram.GumballMachine.model.GumballMachineRecord;
-import edu.iu.habahram.GumballMachine.model.TransitionResult;
+import edu.iu.dcrispin.GumballMachine.model.GumballMachineRecord;
+import edu.iu.dcrispin.GumballMachine.model.TransitionResult;
 
 import java.io.IOException;
 import java.util.List;

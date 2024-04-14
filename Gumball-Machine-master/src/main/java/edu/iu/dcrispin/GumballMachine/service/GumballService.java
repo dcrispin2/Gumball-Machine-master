@@ -1,10 +1,10 @@
-package edu.iu.habahram.GumballMachine.service;
+package edu.iu.dcrispin.GumballMachine.service;
 
-import edu.iu.habahram.GumballMachine.model.GumballMachine;
-import edu.iu.habahram.GumballMachine.model.GumballMachineRecord;
-import edu.iu.habahram.GumballMachine.model.IGumballMachine;
-import edu.iu.habahram.GumballMachine.model.TransitionResult;
-import edu.iu.habahram.GumballMachine.repository.IGumballRepository;
+import edu.iu.dcrispin.GumballMachine.model.GumballMachine;
+import edu.iu.dcrispin.GumballMachine.model.GumballMachineRecord;
+import edu.iu.dcrispin.GumballMachine.model.IGumballMachine;
+import edu.iu.dcrispin.GumballMachine.model.TransitionResult;
+import edu.iu.dcrispin.GumballMachine.repository.IGumballRepository;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

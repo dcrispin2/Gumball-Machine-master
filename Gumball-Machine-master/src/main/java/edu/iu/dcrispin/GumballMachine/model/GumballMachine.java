@@ -1,4 +1,4 @@
-package edu.iu.habahram.GumballMachine.model;
+package edu.iu.dcrispin.GumballMachine.model;
 
 public class GumballMachine implements IGumballMachine {
     final String SOLD_OUT = GumballMachineState.OUT_OF_GUMBALLS.name();

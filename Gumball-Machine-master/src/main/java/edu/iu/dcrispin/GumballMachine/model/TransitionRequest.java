@@ -1,4 +1,4 @@
-package edu.iu.habahram.GumballMachine.model;
+package edu.iu.dcrispin.GumballMachine.model;
 
 public record TransitionRequest(String id) {
 }
