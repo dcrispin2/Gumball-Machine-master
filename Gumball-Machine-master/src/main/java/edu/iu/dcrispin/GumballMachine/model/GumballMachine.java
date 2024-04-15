@@ -91,6 +91,13 @@ public class GumballMachine implements IGumballMachine {
     }
 
     @Override
+    public TransitionResult refillMachine(int num){return null;}
+
+
+    @Override
+    public void refill(int num){}
+
+    @Override
     public void changeTheStateTo(GumballMachineState name) {
 
     }

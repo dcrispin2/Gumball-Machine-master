@@ -24,6 +24,7 @@ public class HasQuarterState implements IState{
         gumballMachine.changeTheStateTo(GumballMachineState.GUMBALL_SOLD);
         String message = "Gumball sold";
         boolean succeeded = true;
+        gumballMachine.dispense();
         return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
     }
     @Override
@@ -32,6 +33,13 @@ public class HasQuarterState implements IState{
         boolean succeeded = false;
         return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
 
+    }
+    @Override
+    public TransitionResult refill(int num) {
+        String message = "Machine refilled";
+        gumballMachine.refill(num);
+        boolean succeeded = true;
+        return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
     }
     @Override
     public String getTheName() {

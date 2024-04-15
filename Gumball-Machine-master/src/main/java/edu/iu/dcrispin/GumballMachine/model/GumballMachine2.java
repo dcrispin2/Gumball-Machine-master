@@ -55,14 +55,24 @@ public class GumballMachine2 implements IGumballMachine {
 
     @Override
     public TransitionResult turnCrank() {
-        state.turnCrank();
-        return state.dispense();
+        return state.turnCrank();
+
     }
 
     @Override
     public TransitionResult dispense() {
-        System.out.println("This should not be showing - GB2 dispense has been called somehow");
-        return null;
+        //System.out.println("This should not be showing - GB2 dispense has been called somehow");
+        return state.dispense();
+    }
+
+    @Override
+    public TransitionResult refillMachine(int num) {
+        return state.refill(num);
+    }
+
+    @Override
+    public void refill(int num){
+        count = count + num;
     }
 
     @Override

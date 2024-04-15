@@ -29,7 +29,6 @@ public class SoldState implements IState{
     @Override
     public TransitionResult dispense() {
         String message;
-        int count = gumballMachine.getCount();
         boolean succeeded = true;
 
 
@@ -42,6 +41,13 @@ public class SoldState implements IState{
             message = "Machine sold out.";
         }
 
+        return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
+    }
+    @Override
+    public TransitionResult refill(int num) {
+        String message = "Machine refilled";
+        gumballMachine.refill(num);
+        boolean succeeded = true;
         return new TransitionResult(succeeded, message, gumballMachine.getTheStateName(), gumballMachine.getCount());
     }
 
